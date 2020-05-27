@@ -3,7 +3,7 @@
 # Environment: Java (glibc support)
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM        openjdk:8-jre-slim
+FROM        adoptopenjdk/openjdk8:aarch64-ubuntu-jdk8u252-b09
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 
