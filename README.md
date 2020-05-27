@@ -1,3 +1,4 @@
+## These are modified versions of Pterodactyl's images that can run on AARCH64 - optimized for the AWS M6g instances which happen to be great for gameservers!
 [![Logo Image](https://cdn.pterodactyl.io/logos/Banner%20Logo%20Black@2x.png)](https://pterodactyl.io)
 
 This repository contains generic [Docker](https://docker.com) images that are used by Pterodactyl Panel to run games. With the release of `v0.6.0` of our panel, we have moved to making the install process be a completely seperate part of the process, making it much easier to maintain a smaller set of Dockerfiles.
