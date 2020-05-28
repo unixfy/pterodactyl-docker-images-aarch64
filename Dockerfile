@@ -5,7 +5,7 @@
 # ----------------------------------
 FROM        adoptopenjdk/openjdk8:latest
 
-LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
+LABEL       author="Alex Wang" maintainer="admin@unixfy.me"
 
 RUN /bin/bash apt-get update -y \
  && /bin/bash apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
