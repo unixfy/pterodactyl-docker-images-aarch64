@@ -7,9 +7,9 @@ FROM        adoptopenjdk/openjdk8:latest
 
 LABEL       author="Alex Wang" maintainer="admin@unixfy.me"
 
-RUN /bin/bash apt-get update -y \
- && /bin/bash apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
- && /bin/bash useradd -d /home/container -m container
+RUN apt-get update -y \
+ && DEBIAN_FRONTEND=noninteractive apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
+ && useradd -d /home/container -m container
  
 USER container
 ENV  USER=container HOME=/home/container
